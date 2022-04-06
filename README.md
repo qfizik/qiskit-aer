@@ -70,7 +70,7 @@ print('Counts(ideal):', counts_ideal)
 # This simulator backend will be automatically configured
 # using the device configuration and noise model 
 provider = IBMQ.load_account()
-backend = provider.get_backend('ibmq_athens')
+backend = provider.get_backend('ibmq_belem')
 aersim_backend = AerSimulator.from_backend(backend)
 
 # Perform noisy simulation
